@@ -9,6 +9,10 @@ class AppRouter extends RootStackRouter {
             page: SplashRoute.page,
             path: '/splash',
             transitionsBuilder: TransitionsBuilders.fadeIn,
-            initial: true)
+            initial: true),
+        CustomRoute(
+            page: LoginRoute.page,
+            path: '/login',
+            transitionsBuilder: TransitionsBuilders.fadeIn)
       ];
 }
