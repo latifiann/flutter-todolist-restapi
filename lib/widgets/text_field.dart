@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_restapi/styles/colors.dart';
 
-Widget customTextField(
-    {String? title,
-    String? hint,
-    TextEditingController? controller,
-    int? maxLines = 1}) {
+Widget customTextField({
+  String? title,
+  String? hint,
+  TextEditingController? controller,
+  int? maxLines = 1,
+  required bool obscureText,
+}) {
   return Column(
     children: [
       Container(
@@ -29,6 +31,7 @@ Widget customTextField(
           controller: controller,
           maxLines: maxLines,
           decoration: InputDecoration(hintText: hint, border: InputBorder.none),
+          obscureText: obscureText,
         ),
       )
     ],

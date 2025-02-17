@@ -13,6 +13,10 @@ class AppRouter extends RootStackRouter {
         CustomRoute(
             page: LoginRoute.page,
             path: '/login',
+            transitionsBuilder: TransitionsBuilders.fadeIn),
+        CustomRoute(
+            page: RegisterRoute.page,
+            path: '/register',
             transitionsBuilder: TransitionsBuilders.fadeIn)
       ];
 }
